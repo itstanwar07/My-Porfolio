@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayur Tanwar — Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <span class="nav-logo">Mayur Tanwar</span>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero" id="about">
+        <div class="container">
+            <p class="hero-greeting">Hi, I'm</p>
+            <h1 class="hero-name">Mayur Tanwar</h1>
+            <p class="hero-tagline">Web Developer &amp; AI/ML Enthusiast</p>
+            <p class="hero-desc">
+                B.Tech Computer Science student at Gurukula Kangri Vishwavidyalaya, Haridwar.
+                I build distributed backend systems, integrate AI pipelines, and explore
+                the intersection of software engineering and machine learning.
+            </p>
+            <div class="hero-actions">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="#contact" class="btn btn-outline">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section" id="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+
+                <div class="skill-card">
+                    <div class="skill-icon">⚙️</div>
+                    <h3>Backend &amp; APIs</h3>
+                    <p>Java (Spring Boot), Python (Flask, FastAPI), RESTful API design, Microservices Architecture</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">🗄️</div>
+                    <h3>Databases</h3>
+                    <p>PostgreSQL, Redis, SQL, MongoDB (fundamentals)</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">🛠️</div>
+                    <h3>Tools &amp; DevOps</h3>
+                    <p>Docker, Git, Linux, RabbitMQ, Jupyter Notebook, VS Code</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">💻</div>
+                    <h3>Languages</h3>
+                    <p>Python, Java, C, SQL, JavaScript (fundamentals)</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">🤖</div>
+                    <h3>AI / ML</h3>
+                    <p>LLM Integration (Gemini), Prompt Engineering, Generative AI, NLP, Machine Learning</p>
+                </div>
+
+                <div class="skill-card expanding">
+                    <div class="skill-icon">🚀</div>
+                    <h3>Currently Learning</h3>
+                    <p>React.js, Node.js / Express.js, Tailwind CSS, MongoDB Atlas</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section section-alt" id="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div>
+                            <h3>MedDoc Hub</h3>
+                            <span class="project-tag">Full-Stack Microservices</span>
+                        </div>
+                        <span class="project-status status-live">Completed</span>
+                    </div>
+                    <p class="project-desc">
+                        A medical research validator built as a distributed microservices system.
+                        Architected with 4 Java Spring Boot backend services and 5 Python Flask AI
+                        validation services connected through RESTful APIs.
+                    </p>
+                    <ul class="project-points">
+                        <li>PostgreSQL data layer with Redis caching and RabbitMQ messaging</li>
+                        <li>All services containerized with Docker for deployment</li>
+                        <li>Admin panel supporting validation across text, image, statistics, plagiarism, and drug-safety checks</li>
+                    </ul>
+                    <div class="project-tech">
+                        <span>Java</span><span>Spring Boot</span><span>Python</span><span>Flask</span>
+                        <span>PostgreSQL</span><span>Redis</span><span>RabbitMQ</span><span>Docker</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div>
+                            <h3>RAG-Based AI Application</h3>
+                            <span class="project-tag">Full-Stack AI</span>
+                        </div>
+                        <span class="project-status status-wip">In Development</span>
+                    </div>
+                    <p class="project-desc">
+                        A full-stack Retrieval-Augmented Generation application built from the ground up,
+                        integrating Google Gemini for LLM-powered responses through a FastAPI backend.
+                    </p>
+                    <ul class="project-points">
+                        <li>FastAPI backend with Google Gemini LLM integration</li>
+                        <li>Frontend in development for end-to-end API integration</li>
+                        <li>Public release on GitHub coming soon</li>
+                    </ul>
+                    <div class="project-tech">
+                        <span>Python</span><span>FastAPI</span><span>Google Gemini</span><span>RAG</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div>
+                            <h3>VelocityBI</h3>
+                            <span class="project-tag">Data Dashboard</span>
+                        </div>
+                        <span class="project-status status-live">Completed</span>
+                    </div>
+                    <p class="project-desc">
+                        A retail sales intelligence dashboard built in Python and Streamlit, showcasing
+                        benchmarked, computationally accelerated data pipelines for retail analytics.
+                    </p>
+                    <ul class="project-points">
+                        <li>Benchmarked data pipelines with computational acceleration</li>
+                        <li>Packaged with a pitch deck outlining a production deployment path</li>
+                    </ul>
+                    <div class="project-tech">
+                        <span>Python</span><span>Streamlit</span><span>Data Analytics</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section" id="experience">
+        <div class="container">
+            <h2 class="section-title">Experience &amp; Education</h2>
+            <div class="timeline">
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Machine Learning Intern</h3>
+                                <p class="timeline-company">Krutanic Solutions, Bengaluru</p>
+                            </div>
+                            <span class="timeline-date">Jan 2026 – Mar 2026</span>
+                        </div>
+                        <ul class="timeline-points">
+                            <li>Built and evaluated supervised and unsupervised ML models on real-world datasets as part of a structured, team-based workflow.</li>
+                            <li>Applied Python-based engineering practices including data preprocessing, model evaluation, and iterative testing.</li>
+                            <li>Awarded Certificate of Internship (Enrollment Code: KRT_3000100).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>B.Tech — Computer Science &amp; Engineering</h3>
+                                <p class="timeline-company">Gurukula Kangri Vishwavidyalaya, Haridwar</p>
+                            </div>
+                            <span class="timeline-date">2024 – 2028</span>
+                        </div>
+                        <ul class="timeline-points">
+                            <li>Relevant Coursework: Data Structures &amp; Algorithms, Object-Oriented Programming, DBMS, Operating Systems.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications -->
+    <section class="section section-alt" id="certifications">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            <div class="cert-grid">
+                <div class="cert-card">
+                    <div class="cert-icon">🏅</div>
+                    <div>
+                        <h4>Certificate of Internship — Machine Learning</h4>
+                        <p>Krutanic Solutions &nbsp;·&nbsp; Jan – Mar 2026</p>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">🏅</div>
+                    <div>
+                        <h4>Certificate of Training Completion — Machine Learning</h4>
+                        <p>Krutanic Solutions &nbsp;·&nbsp; Jan 2026</p>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">🏅</div>
+                    <div>
+                        <h4>Generative AI in Action</h4>
+                        <p>Online Certification</p>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">🏅</div>
+                    <div>
+                        <h4>Getting Started with Artificial Intelligence</h4>
+                        <p>Online Certification</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+        <div class="container contact-container">
+            <h2 class="section-title">Get in Touch</h2>
+            <p class="contact-desc">
+                I'm open to internships, collaborations, and interesting projects.
+                Feel free to reach out.
+            </p>
+            <div class="contact-links">
+                <a href="mailto:tanwarmayur2004@gmail.com" class="contact-link">
+                    <span class="contact-link-icon">✉️</span>
+                    tanwarmayur2004@gmail.com
+                </a>
+                <a href="https://linkedin.com/in/mayur-tanwar-242104327" target="_blank" rel="noopener noreferrer" class="contact-link">
+                    <span class="contact-link-icon">💼</span>
+                    linkedin.com/in/mayur-tanwar-242104327
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2026 Mayur Tanwar. Built with HTML &amp; CSS.</p>
+    </footer>
+
+</body>
+</html>
